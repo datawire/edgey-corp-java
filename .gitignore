@@ -23,3 +23,6 @@ data-processing-service-java/.project
 VeryLargeDataStore/.mvn/wrapper/maven-wrapper.jar
 VeryLargeDataStore/.mvn/wrapper/maven-wrapper.properties
 VeryLargeDataStore/.mvn/wrapper/MavenWrapperDownloader.java
+VeryLargeJavaService/.mvn/wrapper/maven-wrapper.jar
+VeryLargeJavaService/.mvn/wrapper/maven-wrapper.properties
+VeryLargeJavaService/.mvn/wrapper/MavenWrapperDownloader.java
