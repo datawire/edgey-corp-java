@@ -48,7 +48,7 @@ Next, access AMBASSADOR_SERVICE_IP in your browser, and note the title color and
 
 
 ## Setup your local Java development environment
-Now you set up a local Java development environment with the data-processing-service-java running locally and use Ambassador Telepresence to intercept traffic in your remote cluster and route it to your local service.
+Now you set up a local Java development environment with the DataProcessingService running locally and use Ambassador Telepresence to intercept traffic in your remote cluster and route it to your local service.
 
 If you don't already have Java installed on your local machine, instructions can be found on the [Oracle website Java page](https://developer.oracle.com/java/).
 
@@ -56,7 +56,7 @@ Additionally you'll need Maven on your local machine, instructions can be found 
 
 
 ```
-cd ../data-processing-service-java
+cd ../DataProcessingService
 
 mvn spring-boot:run
 
@@ -90,7 +90,7 @@ dataprocessingnodeservice: intercepted
 
 ## Fast Debugging with Telepresence
 
-Next, stop the java process running in the terminal and open the data-processing-service-java/src/main/java/io/getambasador/dataprocessingservicejava/rest/DataProcessingController.java file in your favourite IDE. Here we'll use Visual Studio code
+Next, stop the java process running in the terminal and open the DataProcessingService/src/main/java/io/getambasador/dataprocessingservicejava/rest/DataProcessingController.java file in your favourite IDE. Here we'll use Visual Studio code
 
 ```
 (ctrl-c on java process)
@@ -113,7 +113,7 @@ telepresence leave dataprocessingnodeservice
 
 ## Previewing Changes with a Friend or Colleague
 
-You will need to login before generating a preview link with Ambassador Telepresence. Let's try this now, and set up a new intercept with the data-processing-service-java:
+You will need to login before generating a preview link with Ambassador Telepresence. Let's try this now, and set up a new intercept with the DataProcessingService:
 
 ```
 telepresence login
@@ -148,9 +148,9 @@ intercepted
 
 Run the the Java app locally via your IDE. If you are using VSCode you can do this by clicking on the "Run" side navigation option.
 
-Note that if you view the app via the preview URL you will see the intercepted version of the data-processing-service-java that is running locally on your machine and displays the color blue. 
+Note that if you view the app via the preview URL you will see the intercepted version of the DataProcessingService that is running locally on your machine and displays the color blue. 
 
-If you view the app via the AMBASSADOR_SERVICE_IP or regular URL you will see the default non-intercepted version of the data-processing-service-java, and the color will be green. The preview URL injects a header into the request that allows you to create a selective intercept. Only people you share the preview URL with will be able to see the results of changes to your local intercepted service.
+If you view the app via the AMBASSADOR_SERVICE_IP or regular URL you will see the default non-intercepted version of the DataProcessingService, and the color will be green. The preview URL injects a header into the request that allows you to create a selective intercept. Only people you share the preview URL with will be able to see the results of changes to your local intercepted service.
 
 Share the preview link with a friend or colleague via a Slack, Teams, or email message.
 
@@ -160,9 +160,9 @@ Hi, join me for collaborative bug hunting session with Ambassador Telepresence. 
 Preview URL: https://recursing-benz-1011.preview-beta.edgestack.me
 ```
 
-Once they have authenticated via Ambassador they will be able to see the results of your data-processing-service-java interception i.e. they can see the results of any local changes you make. The authentication step ensures that only people from the same organization can access your preview links.
+Once they have authenticated via Ambassador they will be able to see the results of your DataProcessingService interception i.e. they can see the results of any local changes you make. The authentication step ensures that only people from the same organization can access your preview links.
 
-Get your friend to tell you when they can see the EdgeyCorp WebApp home page. Tell them to look at the application architecture diagram and note that you are running the data-processing-service-java locally and all the other services are running in a remote cluster.
+Get your friend to tell you when they can see the EdgeyCorp WebApp home page. Tell them to look at the application architecture diagram and note that you are running the DataProcessingService locally and all the other services are running in a remote cluster.
 
 Now get your friend to click on the link at the bottom of the page "Join a friend for some collaborative bug hunting!"
 
@@ -174,7 +174,7 @@ As your friend is searching note that you can see the logging statements in your
 
 One combination of "country" and "season" results in no records being displayed. This is a bug. 
 
-Once your friend has found the search combination that demonstrates bug, set a breakpoint in your `data-processing-service-java/src/main/java/io/getambasador/dataprocessingservicejava/rest/DataProcessingController.java` code in the `findMerch` API endpoint and look at the verylargedatastore search query being generated.
+Once your friend has found the search combination that demonstrates bug, set a breakpoint in your `DataProcessingService/src/main/java/io/getambasador/dataprocessingservicejava/rest/DataProcessingController.java` code in the `findMerch` API endpoint and look at the verylargedatastore search query being generated.
 
 As you are connected to the Kubernetes cluster network via Ambassador Telepresence, you can also curl the remote verylargedatastore as if you were in the cluster. There is an endpoint that allows you to see all of the seasons available in the data store:
 
