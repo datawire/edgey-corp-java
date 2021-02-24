@@ -90,7 +90,7 @@ dataprocessingnodeservice: intercepted
 
 ## Fast Debugging with Telepresence
 
-Next, stop the java process running in the terminal and open the DataProcessingService/src/main/java/io/getambasador/dataprocessingservicejava/rest/DataProcessingController.java file in your favourite IDE. Here we'll use Visual Studio code
+Next, open the DataProcessingService/src/main/java/io/getambasador/dataprocessingservicejava/rest/DataProcessingController.java file in your favourite IDE. Here we'll use Visual Studio code
 
 ```
 (ctrl-c on java process)
