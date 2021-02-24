@@ -74,7 +74,7 @@ First, set up the intercept:
 telepresence intercept dataprocessingnodeservice --port 3000
 ```
 
-Refresh your browser page for $AMBASSADOR_SERVICE_IP to see the color and environment change based on the differences in the node service running on your local machine.
+Refresh your browser page for $AMBASSADOR_SERVICE_IP to see the color and environment change based on the differences in the java service running on your local machine.
 
 You can easily see the intercepts that are available and running using the `list` command:
 
@@ -90,7 +90,7 @@ dataprocessingnodeservice: intercepted
 
 ## Fast Debugging with Telepresence
 
-Next, stop the node process running in the terminal and open the data-processing-service-java/src/main/java/io/getambasador/dataprocessingservicejava/rest/DataProcessingController.java file in your favourite IDE. Here we'll use Visual Studio code
+Next, stop the java process running in the terminal and open the data-processing-service-java/src/main/java/io/getambasador/dataprocessingservicejava/rest/DataProcessingController.java file in your favourite IDE. Here we'll use Visual Studio code
 
 ```
 (ctrl-c on java process)
