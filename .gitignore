@@ -6,16 +6,7 @@ DataProcessingService/.settings/org.eclipse.core.resources.prefs
 DataProcessingService/.settings/org.eclipse.jdt.apt.core.prefs
 DataProcessingService/.settings/org.eclipse.jdt.core.prefs
 DataProcessingService/.settings/org.eclipse.m2e.core.prefs
-DataProcessingService/target/classes/application.properties
-DataProcessingService/target/classes/io/getambasador/dataprocessingservicejava/DataProcessingServiceJavaApplication.class
-DataProcessingService/target/classes/io/getambasador/dataprocessingservicejava/dto/EdgyMerch.class
-DataProcessingService/target/classes/io/getambasador/dataprocessingservicejava/rest/DataProcessingController.class
-DataProcessingService/target/classes/io/getambasador/dataprocessingservicejava/rest/DataStoreClient.class
-DataProcessingService/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
-DataProcessingService/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
-DataProcessingService/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
-dDataProcessingService/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
-DataProcessingService/target/test-classes/io/getambasador/dataprocessingservicejava/DataProcessingServiceJavaApplicationTests.class
+DataProcessingService/target
 DataProcessingService/.classpath
 dDataProcessingService/.DS_Store
 DataProcessingService/.project
